@@ -31,7 +31,7 @@ class PokemonDetail extends React.Component {
           </ul>
           <section className="toys">
             <ul className="toy-list">
-              {items.map(item => <li>
+              {items.map(item => <li key={item.id}>
                 <Link to={`/pokemon/${poke.id}/item/${item.id}`}>
                   <img src={item.image_url} alt="Item image"/>
                 </Link>
